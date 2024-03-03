@@ -9,6 +9,7 @@
   to = "/.netlify/functions/api"
   status = 200
   force = true
+  headers = {X-From = "Netlify"}
 [[headers]]
   for = "/*"
   [headers.values]
