@@ -9,6 +9,10 @@
   to = "/.netlify/functions/api"
   status = 200
   force = true
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
 
 [template.environment]
   ACKEE_MONGODB = "ACKEE_MONGODB"
